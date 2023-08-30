@@ -36,8 +36,15 @@ body{
 }
 
 [id*="unit"] button{
-    width: 50px;
-    margin: 0;
-    padding: 0;
+    width: 75px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.playstop{
     background-color: green;
+}
+
+.record{
+    text-align: center;
 }
