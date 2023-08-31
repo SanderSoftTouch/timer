@@ -3,7 +3,23 @@ const play_buttons = document.querySelectorAll('.playstop');
 const save_buttons = document.querySelectorAll('.toevoegen');
 teller_1 = 0;
 teller_2 = 0;
-var timerOn;
+var timerOn_1;
+var timerOn_2;
+
+window.onload = function(e){
+    let k = 'array'
+    let l = 'timerOn'
+    for(var i=0; i<play_buttons.length; i++){
+        window[`${k}_${i + 1}`] = [];
+        window[`${l}_${i + 1}`];
+        //eval('var ' + k + '_' + (i + 1) + '=[];');
+        //window[`array_${i}`].push("test");
+        console.log(window[`${l}_${i + 1}`])
+        window[`${k}_${i + 1}`].push("test", "test2", window[`${l}_${i + 1}`]);
+    }
+    console.log(array_1, array_2)
+
+}
 
 for(var i=0; i < play_buttons.length; i++){
     play_buttons[i].addEventListener("click", function(){
@@ -59,7 +75,7 @@ function slaOp(knop){
     window[`teller_${knop.parentElement.id.charAt(knop.parentElement.id.length - 1)}`] = 0
     knop.previousElementSibling.previousElementSibling.innerText = '00:00:00'
     knop.nextElementSibling.childNodes[1].innerText = tijdConverter(tellerConverter(knop.nextElementSibling.childNodes[1].innerText) + resultaat);
-    console.log(resultaat, dagtotaal, knop.nextElementSibling.childNodes[1], tellerConverter("01:01:01"), knop.previousElementSibling)
+    //console.log(resultaat, dagtotaal, knop.nextElementSibling.childNodes[1], tellerConverter("01:01:01"), knop.previousElementSibling)
 }
 
 
