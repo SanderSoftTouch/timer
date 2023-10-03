@@ -10,41 +10,24 @@ body{
     align-items: center;
 }
 
-#container{
+#stat{
     display: flex;
+    flex-direction: row;
 }
 
-[id*="unit"]{
+[id*="stats"]{
     width: 200px;
     margin: 5px;
     padding: 5px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     border: 1px solid hotpink;
 }
 
-[id*="unit"] *{
-    margin: 5px;
-    padding: 5px;
-}
-
-[id*="unit"] h4{
-    border: 1px solid black;
-    width: 100px;
-    text-align: center;
-}
-
-[id*="unit"] button{
-    width: 75px;
-    margin: 2px;
-    padding: 2px;
-}
-
-.playstop{
-    background-color: green;
-}
-
-.record{
-    text-align: center;
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
